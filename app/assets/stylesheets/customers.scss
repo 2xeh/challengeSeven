@@ -1,13 +1,38 @@
-// Place all the styles related to the customers controller here.
+
+
+
+// Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.product{
-	border: 1px solid grey;
+.customer{
+	border: 1px solid #888;
+  box-shadow: 2px 2px 1px #888;
 	margin: 2em;
 	padding: 1em;
-
+  background-color: white;
+  font-family: "Trebuchet", sans-serif;
+  font-size: 12pt;
+  width: 250px;
+  height: 400px;
+  float: left;
+  margin: 10px;
 	// hierarchical nesting
 	h2 {
-		color: blue;
+		color: #444;
+    font-weight: bold;
+    font-family: "Cambria", Georgia, Times, serif;
+    font-size: 24px;
 	}
+
+  img {
+    width: 90px;
+    height: 120px;
+  }
+
+  a {
+    color: #444;
+  }
+  :visited {
+    color: #888;
+  }
 }

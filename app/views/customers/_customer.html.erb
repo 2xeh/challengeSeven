@@ -1,0 +1,22 @@
+/# recall .divWithClassName or #divWithId
+/# if you wanted to do both at the same time you could write:
+/# lookup "Attributes Wrapper"
+/# http://www.rubydoc.info/gems/slim/frames
+.customer
+  h2 = customer.full_name
+  - unless customer.image_filename.empty?
+    = image_tag customer.image_filename
+
+
+  p
+    /# where "Phone: " is bold
+    strong> Phone:
+    = customer.phone_number
+
+  - unless customer.email_address.empty?
+    p
+      = customer.email_address
+
+  - unless customer.notes.empty?
+    p
+      = customer.notes

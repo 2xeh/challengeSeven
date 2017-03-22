@@ -12,6 +12,11 @@
     /# where "Phone: " is bold
     strong> Phone:
     = customer.phone_number
+    
+    - unless customer.province_id.nil?
+      p
+        strong> Province:
+        = customer.province.name
 
   - unless customer.email_address.empty?
     p

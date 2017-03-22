@@ -1,0 +1,12 @@
+h1 All Customers With Missing Emails
+
+p
+  = link_to 'Index', root_path
+  = ' - '
+  = link_to 'Alphabetized', alphabetized_path
+
+/# short version
+= render partial: 'customers/customer', collection: @customers
+
+/# long version to work with filtered partial. More key value pairs could go in the {hash}
+/# = render partial: 'product', collection: @products, locals: {full_details: false}

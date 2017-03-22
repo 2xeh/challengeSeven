@@ -1,0 +1,14 @@
+h1 All Customers
+
+/#<% # The index view should link to the missing email view and alphabetized view, and vice versa. %>
+/#<%= link_to 'Home', index_path %> |
+p
+  = link_to 'Alphabetized', alphabetized_path 
+  = ' - '
+  = link_to 'Missing Email', missing_email_path
+
+/# short version
+= render partial: 'customers/customer', collection: @customers
+
+/# long version to work with filtered partial. More key value pairs could go in the {hash}
+/# = render partial: 'product', collection: @products, locals: {full_details: false}

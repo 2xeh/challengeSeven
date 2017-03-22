@@ -7,15 +7,15 @@
 .customer{
 	border: 1px solid #888;
   box-shadow: 2px 2px 1px #888;
-	margin: 2em;
-	padding: 1em;
   background-color: white;
   font-family: "Trebuchet", sans-serif;
-  font-size: 12pt;
-  width: 250px;
+  font-size: 10pt;
+  width: 225px;
   height: 400px;
   float: left;
-  margin: 10px;
+  margin: 5px;
+  padding: 1em;
+  
 	// hierarchical nesting
 	h2 {
 		color: #444;

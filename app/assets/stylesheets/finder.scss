@@ -1,0 +1,27 @@
+// Place all the styles related to the finder controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: #e5e5e5;
+  margin: 5px;
+
+  a:link, a:active, a:visited {
+    color: #777;
+  }
+
+  a:hover {
+    color: #333;
+  }
+
+  a {
+    font-family: "Trebuchet", sans-serif;
+    font-size: 12pt;
+  }
+
+  h1 {
+    color: #444;
+    font-weight: bold;
+    font-family: "Cambria", Georgia, Times, serif;
+    font-size: 30px;
+  }
+}

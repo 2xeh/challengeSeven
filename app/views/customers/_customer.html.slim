@@ -4,9 +4,9 @@
 /# http://www.rubydoc.info/gems/slim/frames
 .customer
   h2 = customer.full_name
-  - unless customer.image_filename.empty?
-    = image_tag customer.image_filename
-
+  
+  - unless customer.image.empty?
+    = image_tag customer.image
 
   p
     /# where "Phone: " is bold
@@ -15,8 +15,10 @@
 
   - unless customer.email_address.empty?
     p
+      strong> Email:
       = customer.email_address
 
   - unless customer.notes.empty?
     p
+      strong> Notes:
       = customer.notes
